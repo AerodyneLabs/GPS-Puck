@@ -1,0 +1,60 @@
+# KiCAD
+## Autosave files
+*_autosave*
+
+## Backup files
+*bak
+*bck
+
+## Temp files
+$*
+
+# VIM
+*~
+*.swp
+
+# Production files
+Hardware/Gerber.zip
+
+# Eclipse
+*.pydevproject
+.metadata
+.gradle
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# TeXlipse plugin
+.texlipse
+
+# Debug files
+Debug/
+
+# CoIDE
+*.pbxproj
+*.comarker
+*.cogui
+
+# Python
+*.pyc
