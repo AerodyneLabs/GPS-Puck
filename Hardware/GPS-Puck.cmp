@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-12-20 BZR 5331)-product   date = 1/2/2015 3:44:15 PM
+Cmp-Mod V01 Created by Cvpcb (2014-12-20 BZR 5331)-product   date = 1/2/2015 4:52:41 PM
 
 BeginCmp
 TimeStamp = /54A5E642;
@@ -229,6 +229,48 @@ TimeStamp = /54A69582;
 Reference = R11;
 ValeurCmp = 33k;
 IdModule  = Resistors:RESC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A75540;
+Reference = R12;
+ValeurCmp = 33k;
+IdModule  = Resistors:RESC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A7548A;
+Reference = R13;
+ValeurCmp = 33k;
+IdModule  = Resistors:RESC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A74CC1;
+Reference = R14;
+ValeurCmp = 33k;
+IdModule  = Resistors:RESC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A7554A;
+Reference = SB1;
+ValeurCmp = INV;
+IdModule  = Custom:SB1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A75494;
+Reference = SB2;
+ValeurCmp = INV;
+IdModule  = Custom:SB1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A74D7E;
+Reference = SB3;
+ValeurCmp = INV;
+IdModule  = Custom:SB1608N;
 EndCmp
 
 BeginCmp
