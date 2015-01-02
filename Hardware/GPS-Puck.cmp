@@ -1,0 +1,115 @@
+Cmp-Mod V01 Created by Cvpcb (2014-12-20 BZR 5331)-product   date = 1/1/2015 6:52:03 PM
+
+BeginCmp
+TimeStamp = /54A5E642;
+Reference = AE1;
+ValeurCmp = Antenna;
+IdModule  = Custom:Antenna_APAE1575R1840BADB1F;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A5F8F5;
+Reference = C1;
+ValeurCmp = 1uF;
+IdModule  = Capacitors:CAPC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A5FA82;
+Reference = C2;
+ValeurCmp = 1uF;
+IdModule  = Capacitors:CAPC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A5EF05;
+Reference = C3;
+ValeurCmp = 0.01uF;
+IdModule  = Capacitors:CAPC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A5F666;
+Reference = C4;
+ValeurCmp = 3.6pF;
+IdModule  = Capacitors:CAPC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A5EE84;
+Reference = C5;
+ValeurCmp = 22pF;
+IdModule  = Capacitors:CAPC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A5EF75;
+Reference = C6;
+ValeurCmp = 1uF;
+IdModule  = Capacitors:CAPC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A5F075;
+Reference = C7;
+ValeurCmp = 1uF;
+IdModule  = Capacitors:CAPC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A5E72E;
+Reference = C8;
+ValeurCmp = 22nF;
+IdModule  = Capacitors:CAPC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A5EC02;
+Reference = L1;
+ValeurCmp = 8.2nH;
+IdModule  = Inductors:INDC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A5E7AD;
+Reference = L2;
+ValeurCmp = 2.2nH;
+IdModule  = Inductors:INDC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A5FAC8;
+Reference = R1;
+ValeurCmp = Resistor;
+IdModule  = Resistors:RESC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A5EB8F;
+Reference = R2;
+ValeurCmp = 180;
+IdModule  = Resistors:RESC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A5E86D;
+Reference = R3;
+ValeurCmp = 4.7k;
+IdModule  = Resistors:RESC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A5E60B;
+Reference = U1;
+ValeurCmp = Venus838LPx-L;
+IdModule  = Custom:Sensor_Venus838;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A5E6D3;
+Reference = U2;
+ValeurCmp = SKY65047-360LF;
+IdModule  = SON:SON50P200X200-9T100X180N;
+EndCmp
+
+EndListe
