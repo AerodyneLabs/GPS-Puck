@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-12-20 BZR 5331)-product   date = 1/2/2015 4:14:46 AM
+Cmp-Mod V01 Created by Cvpcb (2014-12-20 BZR 5331)-product   date = 1/2/2015 4:33:07 AM
 
 BeginCmp
 TimeStamp = /54A5E642;
@@ -134,6 +134,20 @@ IdModule  = Inductors:INDC2012N;
 EndCmp
 
 BeginCmp
+TimeStamp = /54A68889;
+Reference = Q1;
+ValeurCmp = BSS138;
+IdModule  = SOT:SOT95P240-3N-GSD;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A6956A;
+Reference = Q2;
+ValeurCmp = BSS138;
+IdModule  = SOT:SOT95P240-3N-GSD;
+EndCmp
+
+BeginCmp
 TimeStamp = /54A5FAC8;
 Reference = R1;
 ValeurCmp = 33k;
@@ -179,6 +193,34 @@ BeginCmp
 TimeStamp = /54A68195;
 Reference = R7;
 ValeurCmp = 0;
+IdModule  = Resistors:RESC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A68C9B;
+Reference = R8;
+ValeurCmp = 33k;
+IdModule  = Resistors:RESC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A68E64;
+Reference = R9;
+ValeurCmp = 33k;
+IdModule  = Resistors:RESC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A69576;
+Reference = R10;
+ValeurCmp = 33k;
+IdModule  = Resistors:RESC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A69582;
+Reference = R11;
+ValeurCmp = 33k;
 IdModule  = Resistors:RESC1608N;
 EndCmp
 
