@@ -1,4 +1,4 @@
-update=1/1/2015 11:32:28 PM
+update=1/2/2015 3:07:41 PM
 version=1
 last_client=kicad
 [cvpcb]
@@ -38,3 +38,4 @@ LibName4=Connectors
 LibName5=Passives
 LibName6=Sensors
 LibName7=Skyworks
+LibName8=7400s

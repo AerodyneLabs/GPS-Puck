@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-12-20 BZR 5331)-product   date = 1/2/2015 4:33:07 AM
+Cmp-Mod V01 Created by Cvpcb (2014-12-20 BZR 5331)-product   date = 1/2/2015 3:44:15 PM
 
 BeginCmp
 TimeStamp = /54A5E642;
@@ -96,6 +96,13 @@ TimeStamp = /54A630FA;
 Reference = C12;
 ValeurCmp = 10uF;
 IdModule  = Capacitors:CAPC2012N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A7102E;
+Reference = C13;
+ValeurCmp = 1uF;
+IdModule  = Capacitors:CAPC1608N;
 EndCmp
 
 BeginCmp
@@ -243,6 +250,13 @@ TimeStamp = /54A62EE9;
 Reference = U3;
 ValeurCmp = NCP1521;
 IdModule  = SOT:SOT95P275-5L40N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A70DDA;
+Reference = U4;
+ValeurCmp = 74HC2G86;
+IdModule  = SOP:SOP65P400-8N;
 EndCmp
 
 EndListe
