@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-12-08 BZR 5318)-product   date = 1/2/2015 12:50:31 AM
+Cmp-Mod V01 Created by Cvpcb (2014-12-20 BZR 5331)-product   date = 1/2/2015 4:14:46 AM
 
 BeginCmp
 TimeStamp = /54A5E642;
@@ -106,6 +106,13 @@ IdModule  = Diodes:SODFL1608N;
 EndCmp
 
 BeginCmp
+TimeStamp = /54A6715B;
+Reference = J1;
+ValeurCmp = Conn-9;
+IdModule  = Connectors:Conn_9-Wire-Pads;
+EndCmp
+
+BeginCmp
 TimeStamp = /54A5EC02;
 Reference = L1;
 ValeurCmp = 8.2nH;
@@ -150,7 +157,7 @@ EndCmp
 BeginCmp
 TimeStamp = /54A651AF;
 Reference = R4;
-ValeurCmp = 3k;
+ValeurCmp = 390;
 IdModule  = Resistors:RESC1608N;
 EndCmp
 
@@ -165,6 +172,13 @@ BeginCmp
 TimeStamp = /54A63030;
 Reference = R6;
 ValeurCmp = 100k;
+IdModule  = Resistors:RESC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A68195;
+Reference = R7;
+ValeurCmp = 0;
 IdModule  = Resistors:RESC1608N;
 EndCmp
 
