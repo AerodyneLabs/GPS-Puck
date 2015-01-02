@@ -1,9 +1,12 @@
 EESchema Schematic File Version 2
 LIBS:power
+LIBS:ONSemiconductor
+LIBS:Actives
 LIBS:Connectors
 LIBS:Passives
 LIBS:Sensors
 LIBS:Skyworks
+LIBS:GPS-Puck-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -113,27 +116,6 @@ F 9 "5%" V 9450 3650 50  0000 L CNN "Tolerance"
 	1    9300 3550
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	10200 2300 10200 2500
-Wire Wire Line
-	9300 3900 9300 3800
-Wire Wire Line
-	9200 3200 9300 3200
-Wire Wire Line
-	9300 3200 9300 3300
-Wire Wire Line
-	9300 2900 9200 2900
-Wire Wire Line
-	9300 1750 9300 3000
-Wire Wire Line
-	9300 3000 9200 3000
-Connection ~ 9300 2900
-Wire Wire Line
-	9600 3100 9200 3100
-Wire Wire Line
-	10200 3000 10200 3100
-Wire Wire Line
-	10100 3100 10300 3100
 $Comp
 L Resistor R2
 U 1 1 54A5EB8F
@@ -168,19 +150,6 @@ F 9 "100mO" V 7750 2650 50  0000 L CNN "DCR"
 	1    7600 2550
 	0    -1   1    0   
 $EndComp
-Wire Wire Line
-	8000 3000 8000 3400
-Wire Wire Line
-	8000 3000 8100 3000
-Wire Wire Line
-	8100 3100 8000 3100
-Connection ~ 8000 3100
-Wire Wire Line
-	8100 3200 8000 3200
-Connection ~ 8000 3200
-Wire Wire Line
-	8100 3300 8000 3300
-Connection ~ 8000 3300
 $Comp
 L GNDA #PWR02
 U 1 1 54A5EE5C
@@ -271,6 +240,479 @@ F 9 "X5R" V 8950 2250 50  0000 L CNN "Dielectric"
 	1    8800 2150
 	0    1    1    0   
 $EndComp
+$Comp
+L GNDA #PWR04
+U 1 1 54A5F28E
+P 7100 2500
+F 0 "#PWR04" H 7100 2250 60  0001 C CNN
+F 1 "GNDA" H 7100 2350 60  0000 C CNN
+F 2 "" H 7100 2500 60  0000 C CNN
+F 3 "" H 7100 2500 60  0000 C CNN
+	1    7100 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR05
+U 1 1 54A5F2D7
+P 8300 2500
+F 0 "#PWR05" H 8300 2250 60  0001 C CNN
+F 1 "GNDA" H 8300 2350 60  0000 C CNN
+F 2 "" H 8300 2500 60  0000 C CNN
+F 3 "" H 8300 2500 60  0000 C CNN
+	1    8300 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR06
+U 1 1 54A5F2EE
+P 8800 2500
+F 0 "#PWR06" H 8800 2250 60  0001 C CNN
+F 1 "GNDA" H 8800 2350 60  0000 C CNN
+F 2 "" H 8800 2500 60  0000 C CNN
+F 3 "" H 8800 2500 60  0000 C CNN
+	1    8800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR07
+U 1 1 54A5F36C
+P 6600 2500
+F 0 "#PWR07" H 6600 2250 60  0001 C CNN
+F 1 "GNDA" H 6600 2350 60  0000 C CNN
+F 2 "" H 6600 2500 60  0000 C CNN
+F 3 "" H 6600 2500 60  0000 C CNN
+	1    6600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR08
+U 1 1 54A5F52D
+P 6200 4300
+F 0 "#PWR08" H 6200 4050 60  0001 C CNN
+F 1 "GNDA" H 6200 4150 60  0000 C CNN
+F 2 "" H 6200 4300 60  0000 C CNN
+F 3 "" H 6200 4300 60  0000 C CNN
+	1    6200 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitor C4
+U 1 1 54A5F666
+P 6850 2900
+F 0 "C4" V 6700 3000 60  0000 L CNN
+F 1 "3.6pF" V 6800 3000 60  0000 L CNN
+F 2 "Capacitors:CAPC1608N" H 6750 2900 60  0001 C CNN
+F 3 "" H 6850 3000 60  0001 C CNN
+F 4 "Value" H 6850 2900 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 6850 2900 60  0001 C CNN "Manufacturer Part #"
+F 6 "Value" H 6850 2900 60  0001 C CNN "Vendor"
+F 7 "Value" H 6850 2900 60  0001 C CNN "Vendor Part #"
+F 8 "10V" V 6900 3000 50  0000 L CNN "Voltage"
+F 9 "X5R" V 7000 3000 50  0000 L CNN "Dielectric"
+	1    6850 2900
+	1    0    0    1   
+$EndComp
+$Comp
+L Capacitor C1
+U 1 1 54A5F8F5
+P 2800 3350
+F 0 "C1" V 2650 3450 60  0000 L CNN
+F 1 "1uF" V 2750 3450 60  0000 L CNN
+F 2 "Capacitors:CAPC1608N" H 2700 3350 60  0001 C CNN
+F 3 "" H 2800 3450 60  0001 C CNN
+F 4 "Value" H 2800 3350 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 2800 3350 60  0001 C CNN "Manufacturer Part #"
+F 6 "Value" H 2800 3350 60  0001 C CNN "Vendor"
+F 7 "Value" H 2800 3350 60  0001 C CNN "Vendor Part #"
+F 8 "10V" V 2850 3450 50  0000 L CNN "Voltage"
+F 9 "X5R" V 2950 3450 50  0000 L CNN "Dielectric"
+	1    2800 3350
+	0    -1   1    0   
+$EndComp
+$Comp
+L Capacitor C2
+U 1 1 54A5FA82
+P 3700 3650
+F 0 "C2" V 3550 3750 60  0000 L CNN
+F 1 "1uF" V 3650 3750 60  0000 L CNN
+F 2 "Capacitors:CAPC1608N" H 3600 3650 60  0001 C CNN
+F 3 "" H 3700 3750 60  0001 C CNN
+F 4 "Value" H 3700 3650 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 3700 3650 60  0001 C CNN "Manufacturer Part #"
+F 6 "Value" H 3700 3650 60  0001 C CNN "Vendor"
+F 7 "Value" H 3700 3650 60  0001 C CNN "Vendor Part #"
+F 8 "10V" V 3750 3750 50  0000 L CNN "Voltage"
+F 9 "X5R" V 3850 3750 50  0000 L CNN "Dielectric"
+	1    3700 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Resistor R1
+U 1 1 54A5FAC8
+P 3350 3300
+F 0 "R1" V 3200 3400 60  0000 L CNN
+F 1 "33k" V 3300 3400 60  0000 L CNN
+F 2 "Resistors:RESC1608N" H 3250 3300 60  0001 C CNN
+F 3 "" H 3350 3400 60  0001 C CNN
+F 4 "Value" H 3350 3300 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 3350 3300 60  0001 C CNN "Manufacturer Part #"
+F 6 "Value" H 3350 3300 60  0001 C CNN "Vendor"
+F 7 "Value" H 3350 3300 60  0001 C CNN "Vendor Part #"
+F 8 "1/10W" V 3400 3400 50  0000 L CNN "Power"
+F 9 "5%" V 3500 3400 50  0000 L CNN "Tolerance"
+	1    3350 3300
+	1    0    0    1   
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 54A5FDEC
+P 3700 4000
+F 0 "#PWR09" H 3700 3750 60  0001 C CNN
+F 1 "GND" H 3700 3850 60  0000 C CNN
+F 2 "" H 3700 4000 60  0000 C CNN
+F 3 "" H 3700 4000 60  0000 C CNN
+	1    3700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 54A5FE00
+P 2800 3700
+F 0 "#PWR010" H 2800 3450 60  0001 C CNN
+F 1 "GND" H 2800 3550 60  0000 C CNN
+F 2 "" H 2800 3700 60  0000 C CNN
+F 3 "" H 2800 3700 60  0000 C CNN
+	1    2800 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR011
+U 1 1 54A5FF6F
+P 2800 1200
+F 0 "#PWR011" H 2800 1050 60  0001 C CNN
+F 1 "+3V3" H 2800 1340 60  0000 C CNN
+F 2 "" H 2800 1200 60  0000 C CNN
+F 3 "" H 2800 1200 60  0000 C CNN
+	1    2800 1200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4500 4200
+Text Label 4300 3600 2    60   ~ 0
+RX
+Text Label 4300 3700 2    60   ~ 0
+TX
+Text Label 4300 3500 2    60   ~ 0
+PPS
+Text Label 4300 4000 2    60   ~ 0
+BS0
+Text Label 4300 4100 2    60   ~ 0
+BS1
+$Comp
+L GND #PWR012
+U 1 1 54A60542
+P 5300 4900
+F 0 "#PWR012" H 5300 4650 60  0001 C CNN
+F 1 "GND" H 5300 4750 60  0000 C CNN
+F 2 "" H 5300 4900 60  0000 C CNN
+F 3 "" H 5300 4900 60  0000 C CNN
+	1    5300 4900
+	1    0    0    -1  
+$EndComp
+Text Label 10300 2400 0    60   ~ 0
+GPS0
+Text Label 10300 3100 0    60   ~ 0
+GPS1
+Text Label 9500 3000 1    60   ~ 0
+GPS2
+Text Label 7600 3000 3    60   ~ 0
+GPS3
+Text Label 6300 2800 1    60   ~ 0
+GPS4
+$Comp
+L NCP1521 U3
+U 1 1 54A62EE9
+P 3200 6050
+F 0 "U3" H 3200 6500 60  0000 C CNN
+F 1 "NCP1521" H 3200 5600 60  0000 C CNN
+F 2 "SOT:SOT95P275-5L40N" H 3200 6050 60  0001 C CNN
+F 3 "" H 3200 6050 60  0000 C CNN
+	1    3200 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Inductor L3
+U 1 1 54A62F76
+P 3950 5700
+F 0 "L3" V 3800 5800 60  0000 L CNN
+F 1 "2.2uH" V 3900 5800 60  0000 L CNN
+F 2 "Inductors:INDC2012N" H 3850 5700 60  0001 C CNN
+F 3 "" H 3950 5800 60  0001 C CNN
+F 4 "Value" H 3950 5700 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 3950 5700 60  0001 C CNN "Manufacturer Part #"
+F 6 "Value" H 3950 5700 60  0001 C CNN "Vendor"
+F 7 "Value" H 3950 5700 60  0001 C CNN "Vendor Part #"
+F 8 "0.25A" V 4000 5800 50  0000 L CNN "Current"
+F 9 "100mO" V 4100 5800 50  0000 L CNN "DCR"
+	1    3950 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistor R5
+U 1 1 54A62FD3
+P 4300 6050
+F 0 "R5" V 4150 6150 60  0000 L CNN
+F 1 "453k" V 4250 6150 60  0000 L CNN
+F 2 "Resistors:RESC1608N" H 4200 6050 60  0001 C CNN
+F 3 "" H 4300 6150 60  0001 C CNN
+F 4 "Value" H 4300 6050 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 4300 6050 60  0001 C CNN "Manufacturer Part #"
+F 6 "Value" H 4300 6050 60  0001 C CNN "Vendor"
+F 7 "Value" H 4300 6050 60  0001 C CNN "Vendor Part #"
+F 8 "1/10W" V 4350 6150 50  0000 L CNN "Power"
+F 9 "5%" V 4450 6150 50  0000 L CNN "Tolerance"
+	1    4300 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L Resistor R6
+U 1 1 54A63030
+P 4300 6750
+F 0 "R6" V 4150 6850 60  0000 L CNN
+F 1 "100k" V 4250 6850 60  0000 L CNN
+F 2 "Resistors:RESC1608N" H 4200 6750 60  0001 C CNN
+F 3 "" H 4300 6850 60  0001 C CNN
+F 4 "Value" H 4300 6750 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 4300 6750 60  0001 C CNN "Manufacturer Part #"
+F 6 "Value" H 4300 6750 60  0001 C CNN "Vendor"
+F 7 "Value" H 4300 6750 60  0001 C CNN "Vendor Part #"
+F 8 "1/10W" V 4350 6850 50  0000 L CNN "Power"
+F 9 "5%" V 4450 6850 50  0000 L CNN "Tolerance"
+	1    4300 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Capacitor C11
+U 1 1 54A63091
+P 4800 6050
+F 0 "C11" V 4650 6150 60  0000 L CNN
+F 1 "18pF" V 4750 6150 60  0000 L CNN
+F 2 "Capacitors:CAPC1608N" H 4700 6050 60  0001 C CNN
+F 3 "" H 4800 6150 60  0001 C CNN
+F 4 "Value" H 4800 6050 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 4800 6050 60  0001 C CNN "Manufacturer Part #"
+F 6 "Value" H 4800 6050 60  0001 C CNN "Vendor"
+F 7 "Value" H 4800 6050 60  0001 C CNN "Vendor Part #"
+F 8 "10V" V 4850 6150 50  0000 L CNN "Voltage"
+F 9 "X5R" V 4950 6150 50  0000 L CNN "Dielectric"
+	1    4800 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L Capacitor C12
+U 1 1 54A630FA
+P 5300 6050
+F 0 "C12" V 5150 6150 60  0000 L CNN
+F 1 "10uF" V 5250 6150 60  0000 L CNN
+F 2 "Capacitors:CAPC2012N" H 5200 6050 60  0001 C CNN
+F 3 "" H 5300 6150 60  0001 C CNN
+F 4 "Value" H 5300 6050 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 5300 6050 60  0001 C CNN "Manufacturer Part #"
+F 6 "Value" H 5300 6050 60  0001 C CNN "Vendor"
+F 7 "Value" H 5300 6050 60  0001 C CNN "Vendor Part #"
+F 8 "10V" V 5350 6150 50  0000 L CNN "Voltage"
+F 9 "X5R" V 5450 6150 50  0000 L CNN "Dielectric"
+	1    5300 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 54A6316B
+P 4300 7100
+F 0 "#PWR013" H 4300 6850 60  0001 C CNN
+F 1 "GND" H 4300 6950 60  0000 C CNN
+F 2 "" H 4300 7100 60  0000 C CNN
+F 3 "" H 4300 7100 60  0000 C CNN
+	1    4300 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 54A6317F
+P 5300 6400
+F 0 "#PWR014" H 5300 6150 60  0001 C CNN
+F 1 "GND" H 5300 6250 60  0000 C CNN
+F 2 "" H 5300 6400 60  0000 C CNN
+F 3 "" H 5300 6400 60  0000 C CNN
+	1    5300 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR015
+U 1 1 54A63193
+P 5300 5600
+F 0 "#PWR015" H 5300 5450 60  0001 C CNN
+F 1 "+3V3" H 5300 5740 60  0000 C CNN
+F 2 "" H 5300 5600 60  0000 C CNN
+F 3 "" H 5300 5600 60  0000 C CNN
+	1    5300 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitor C9
+U 1 1 54A637C4
+P 2400 6050
+F 0 "C9" V 2250 6150 60  0000 L CNN
+F 1 "4.7uF" V 2350 6150 60  0000 L CNN
+F 2 "Capacitors:CAPC1608N" H 2300 6050 60  0001 C CNN
+F 3 "" H 2400 6150 60  0001 C CNN
+F 4 "Value" H 2400 6050 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 2400 6050 60  0001 C CNN "Manufacturer Part #"
+F 6 "Value" H 2400 6050 60  0001 C CNN "Vendor"
+F 7 "Value" H 2400 6050 60  0001 C CNN "Vendor Part #"
+F 8 "10V" V 2450 6150 50  0000 L CNN "Voltage"
+F 9 "X5R" V 2550 6150 50  0000 L CNN "Dielectric"
+	1    2400 6050
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 54A63837
+P 2700 6500
+F 0 "#PWR016" H 2700 6250 60  0001 C CNN
+F 1 "GND" H 2700 6350 60  0000 C CNN
+F 2 "" H 2700 6500 60  0000 C CNN
+F 3 "" H 2700 6500 60  0000 C CNN
+	1    2700 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCOM #PWR017
+U 1 1 54A6384B
+P 2400 5600
+F 0 "#PWR017" H 2400 5450 60  0001 C CNN
+F 1 "VCOM" H 2400 5750 60  0000 C CNN
+F 2 "" H 2400 5600 60  0000 C CNN
+F 3 "" H 2400 5600 60  0000 C CNN
+	1    2400 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 54A63AE3
+P 2400 6400
+F 0 "#PWR018" H 2400 6150 60  0001 C CNN
+F 1 "GND" H 2400 6250 60  0000 C CNN
+F 2 "" H 2400 6400 60  0000 C CNN
+F 3 "" H 2400 6400 60  0000 C CNN
+	1    2400 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode-Schottky D1
+U 1 1 54A64C63
+P 3350 1300
+F 0 "D1" V 3200 1400 60  0000 L CNN
+F 1 "RB521" V 3300 1400 60  0000 L CNN
+F 2 "Diodes:SODFL1608N" H 3350 1300 60  0001 C CNN
+F 3 "" H 3350 1300 60  0000 C CNN
+F 4 "ON Semi" H 3350 1300 60  0001 C CNN "Manufacturer"
+F 5 "RB521S30T1G" H 3350 1300 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 3350 1300 60  0001 C CNN "Vendor"
+F 7 "RB521S30T1GOSCT-ND" H 3350 1300 60  0001 C CNN "Vendor Part #"
+F 8 "500mV" V 3400 1400 60  0000 L CNN "Forward Voltage"
+F 9 "200mA" V 3500 1400 60  0000 L CNN "Current"
+F 10 "30V" H 3350 1200 60  0001 C CNN "Reverse Voltage"
+	1    3350 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery B1
+U 1 1 54A64CFF
+P 3700 2250
+F 0 "B1" H 3750 2350 60  0000 L CNN
+F 1 "3V" H 3750 2150 60  0000 L CNN
+F 2 "Batteries:Battery_ML-1220-F1AN" H 3700 2250 60  0001 C CNN
+F 3 "" H 3700 2250 60  0000 C CNN
+F 4 "Panasonic" H 3700 2250 60  0001 C CNN "Manufacturer"
+F 5 "ML-1220/F1AN" H 3700 2250 60  0001 C CNN "Manufacturer Part #"
+F 6 "Digikey" H 3700 2250 60  0001 C CNN "Vendor"
+F 7 "P295-ND" H 3700 2250 60  0001 C CNN "Vendor Part #"
+	1    3700 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Capacitor C10
+U 1 1 54A64D93
+P 4000 1650
+F 0 "C10" V 3850 1750 60  0000 L CNN
+F 1 "1uF" V 3950 1750 60  0000 L CNN
+F 2 "Capacitors:CAPC1608N" H 3900 1650 60  0001 C CNN
+F 3 "" H 4000 1750 60  0001 C CNN
+F 4 "Value" H 4000 1650 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 4000 1650 60  0001 C CNN "Manufacturer Part #"
+F 6 "Value" H 4000 1650 60  0001 C CNN "Vendor"
+F 7 "Value" H 4000 1650 60  0001 C CNN "Vendor Part #"
+F 8 "10V" V 4050 1750 50  0000 L CNN "Voltage"
+F 9 "X5R" V 4150 1750 50  0000 L CNN "Dielectric"
+	1    4000 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR019
+U 1 1 54A64E7C
+P 4000 2000
+F 0 "#PWR019" H 4000 1750 60  0001 C CNN
+F 1 "GND" H 4000 1850 60  0000 C CNN
+F 2 "" H 4000 2000 60  0000 C CNN
+F 3 "" H 4000 2000 60  0000 C CNN
+	1    4000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 54A64E90
+P 3700 2600
+F 0 "#PWR020" H 3700 2350 60  0001 C CNN
+F 1 "GND" H 3700 2450 60  0000 C CNN
+F 2 "" H 3700 2600 60  0000 C CNN
+F 3 "" H 3700 2600 60  0000 C CNN
+	1    3700 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 2300 10200 2500
+Wire Wire Line
+	9300 3900 9300 3800
+Wire Wire Line
+	9200 3200 9300 3200
+Wire Wire Line
+	9300 3200 9300 3300
+Wire Wire Line
+	9300 2900 9200 2900
+Wire Wire Line
+	9300 1750 9300 3000
+Wire Wire Line
+	9300 3000 9200 3000
+Connection ~ 9300 2900
+Wire Wire Line
+	9200 3100 9600 3100
+Wire Wire Line
+	10200 3000 10200 3100
+Wire Wire Line
+	10100 3100 10300 3100
+Wire Wire Line
+	8000 3000 8000 3400
+Wire Wire Line
+	8000 3000 8100 3000
+Wire Wire Line
+	8100 3100 8000 3100
+Connection ~ 8000 3100
+Wire Wire Line
+	8100 3200 8000 3200
+Connection ~ 8000 3200
+Wire Wire Line
+	8100 3300 8000 3300
+Connection ~ 8000 3300
 Wire Wire Line
 	6600 1800 9300 1800
 Wire Wire Line
@@ -294,56 +736,12 @@ Connection ~ 8300 1800
 Wire Wire Line
 	8800 1900 8800 1800
 Connection ~ 8800 1800
-$Comp
-L GNDA #PWR04
-U 1 1 54A5F28E
-P 7100 2500
-F 0 "#PWR04" H 7100 2250 60  0001 C CNN
-F 1 "GNDA" H 7100 2350 60  0000 C CNN
-F 2 "" H 7100 2500 60  0000 C CNN
-F 3 "" H 7100 2500 60  0000 C CNN
-	1    7100 2500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7100 2500 7100 2400
-$Comp
-L GNDA #PWR05
-U 1 1 54A5F2D7
-P 8300 2500
-F 0 "#PWR05" H 8300 2250 60  0001 C CNN
-F 1 "GNDA" H 8300 2350 60  0000 C CNN
-F 2 "" H 8300 2500 60  0000 C CNN
-F 3 "" H 8300 2500 60  0000 C CNN
-	1    8300 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L GNDA #PWR06
-U 1 1 54A5F2EE
-P 8800 2500
-F 0 "#PWR06" H 8800 2250 60  0001 C CNN
-F 1 "GNDA" H 8800 2350 60  0000 C CNN
-F 2 "" H 8800 2500 60  0000 C CNN
-F 3 "" H 8800 2500 60  0000 C CNN
-	1    8800 2500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8800 2500 8800 2400
 Wire Wire Line
 	8300 2400 8300 2500
-$Comp
-L GNDA #PWR07
-U 1 1 54A5F36C
-P 6600 2500
-F 0 "#PWR07" H 6600 2250 60  0001 C CNN
-F 1 "GNDA" H 6600 2350 60  0000 C CNN
-F 2 "" H 6600 2500 60  0000 C CNN
-F 3 "" H 6600 2500 60  0000 C CNN
-	1    6600 2500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6600 2500 6600 2400
 Wire Wire Line
@@ -354,17 +752,6 @@ Connection ~ 7800 1800
 Wire Wire Line
 	7100 1900 7100 1800
 Connection ~ 7100 1800
-$Comp
-L GNDA #PWR08
-U 1 1 54A5F52D
-P 6200 4300
-F 0 "#PWR08" H 6200 4050 60  0001 C CNN
-F 1 "GNDA" H 6200 4150 60  0000 C CNN
-F 2 "" H 6200 4300 60  0000 C CNN
-F 3 "" H 6200 4300 60  0000 C CNN
-	1    6200 4300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6200 3000 6200 4300
 Wire Wire Line
@@ -405,45 +792,11 @@ Wire Wire Line
 	6100 4100 6200 4100
 Wire Wire Line
 	6100 4200 6200 4200
-$Comp
-L Capacitor C4
-U 1 1 54A5F666
-P 6850 2900
-F 0 "C4" V 6700 3000 60  0000 L CNN
-F 1 "3.6pF" V 6800 3000 60  0000 L CNN
-F 2 "Capacitors:CAPC1608N" H 6750 2900 60  0001 C CNN
-F 3 "" H 6850 3000 60  0001 C CNN
-F 4 "Value" H 6850 2900 60  0001 C CNN "Manufacturer"
-F 5 "Value" H 6850 2900 60  0001 C CNN "Manufacturer Part #"
-F 6 "Value" H 6850 2900 60  0001 C CNN "Vendor"
-F 7 "Value" H 6850 2900 60  0001 C CNN "Vendor Part #"
-F 8 "10V" V 6900 3000 50  0000 L CNN "Voltage"
-F 9 "X5R" V 7000 3000 50  0000 L CNN "Dielectric"
-	1    6850 2900
-	1    0    0    1   
-$EndComp
 Connection ~ 7600 2900
 Wire Wire Line
-	6600 2900 6100 2900
-$Comp
-L Capacitor C1
-U 1 1 54A5F8F5
-P 2800 3350
-F 0 "C1" V 2650 3450 60  0000 L CNN
-F 1 "1uF" V 2750 3450 60  0000 L CNN
-F 2 "Capacitors:CAPC1608N" H 2700 3350 60  0001 C CNN
-F 3 "" H 2800 3450 60  0001 C CNN
-F 4 "Value" H 2800 3350 60  0001 C CNN "Manufacturer"
-F 5 "Value" H 2800 3350 60  0001 C CNN "Manufacturer Part #"
-F 6 "Value" H 2800 3350 60  0001 C CNN "Vendor"
-F 7 "Value" H 2800 3350 60  0001 C CNN "Vendor Part #"
-F 8 "10V" V 2850 3450 50  0000 L CNN "Voltage"
-F 9 "X5R" V 2950 3450 50  0000 L CNN "Dielectric"
-	1    2800 3350
-	0    -1   1    0   
-$EndComp
+	6100 2900 6600 2900
 Wire Wire Line
-	2800 2800 2800 3100
+	2800 1200 2800 3100
 Wire Wire Line
 	2800 3000 4500 3000
 Wire Wire Line
@@ -454,40 +807,6 @@ Connection ~ 4400 3000
 Wire Wire Line
 	4400 3200 4500 3200
 Connection ~ 4400 3100
-$Comp
-L Capacitor C2
-U 1 1 54A5FA82
-P 3700 3650
-F 0 "C2" V 3550 3750 60  0000 L CNN
-F 1 "1uF" V 3650 3750 60  0000 L CNN
-F 2 "Capacitors:CAPC1608N" H 3600 3650 60  0001 C CNN
-F 3 "" H 3700 3750 60  0001 C CNN
-F 4 "Value" H 3700 3650 60  0001 C CNN "Manufacturer"
-F 5 "Value" H 3700 3650 60  0001 C CNN "Manufacturer Part #"
-F 6 "Value" H 3700 3650 60  0001 C CNN "Vendor"
-F 7 "Value" H 3700 3650 60  0001 C CNN "Vendor Part #"
-F 8 "10V" V 3750 3750 50  0000 L CNN "Voltage"
-F 9 "X5R" V 3850 3750 50  0000 L CNN "Dielectric"
-	1    3700 3650
-	0    1    1    0   
-$EndComp
-$Comp
-L Resistor R1
-U 1 1 54A5FAC8
-P 3350 3300
-F 0 "R1" V 3200 3400 60  0000 L CNN
-F 1 "33k" V 3300 3400 60  0000 L CNN
-F 2 "Resistors:RESC1608N" H 3250 3300 60  0001 C CNN
-F 3 "" H 3350 3400 60  0001 C CNN
-F 4 "Value" H 3350 3300 60  0001 C CNN "Manufacturer"
-F 5 "Value" H 3350 3300 60  0001 C CNN "Manufacturer Part #"
-F 6 "Value" H 3350 3300 60  0001 C CNN "Vendor"
-F 7 "Value" H 3350 3300 60  0001 C CNN "Vendor Part #"
-F 8 "1/10W" V 3400 3400 50  0000 L CNN "Power"
-F 9 "5%" V 3500 3400 50  0000 L CNN "Tolerance"
-	1    3350 3300
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	3600 3300 4500 3300
 Wire Wire Line
@@ -497,80 +816,25 @@ Wire Wire Line
 Wire Wire Line
 	3000 3300 3000 3000
 Connection ~ 3000 3000
-$Comp
-L GND #PWR09
-U 1 1 54A5FDEC
-P 3700 4000
-F 0 "#PWR09" H 3700 3750 60  0001 C CNN
-F 1 "GND" H 3700 3850 60  0000 C CNN
-F 2 "" H 3700 4000 60  0000 C CNN
-F 3 "" H 3700 4000 60  0000 C CNN
-	1    3700 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR010
-U 1 1 54A5FE00
-P 2800 3700
-F 0 "#PWR010" H 2800 3450 60  0001 C CNN
-F 1 "GND" H 2800 3550 60  0000 C CNN
-F 2 "" H 2800 3700 60  0000 C CNN
-F 3 "" H 2800 3700 60  0000 C CNN
-	1    2800 3700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2800 3700 2800 3600
 Wire Wire Line
 	3700 3900 3700 4000
 Connection ~ 3700 3300
-$Comp
-L +3V3 #PWR011
-U 1 1 54A5FF6F
-P 2800 2800
-F 0 "#PWR011" H 2800 2650 60  0001 C CNN
-F 1 "+3V3" H 2800 2940 60  0000 C CNN
-F 2 "" H 2800 2800 60  0000 C CNN
-F 3 "" H 2800 2800 60  0000 C CNN
-	1    2800 2800
-	1    0    0    -1  
-$EndComp
 Connection ~ 2800 3000
-NoConn ~ 4500 4200
 Wire Wire Line
 	4400 3900 4500 3900
 Connection ~ 4400 3200
-Text Label 4300 3600 2    60   ~ 0
-RX
-Text Label 4300 3700 2    60   ~ 0
-TX
-Text Label 4300 3500 2    60   ~ 0
-PPS
 Wire Wire Line
 	4300 3500 4500 3500
 Wire Wire Line
 	4300 3600 4500 3600
 Wire Wire Line
 	4300 3700 4500 3700
-Text Label 4300 4000 2    60   ~ 0
-BS0
-Text Label 4300 4100 2    60   ~ 0
-BS1
 Wire Wire Line
 	4300 4000 4500 4000
 Wire Wire Line
 	4300 4100 4500 4100
-$Comp
-L GND #PWR012
-U 1 1 54A60542
-P 5300 4900
-F 0 "#PWR012" H 5300 4650 60  0001 C CNN
-F 1 "GND" H 5300 4750 60  0000 C CNN
-F 2 "" H 5300 4900 60  0000 C CNN
-F 3 "" H 5300 4900 60  0000 C CNN
-	1    5300 4900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5300 4700 5300 4900
 Wire Wire Line
@@ -601,24 +865,92 @@ Connection ~ 5000 4800
 Wire Wire Line
 	4900 4700 4900 4800
 Connection ~ 4900 4800
-Text Label 10300 2400 0    60   ~ 0
-GPS0
 Wire Wire Line
 	10300 2400 10200 2400
 Connection ~ 10200 2400
-Text Label 10300 3100 0    60   ~ 0
-GPS1
 Connection ~ 10200 3100
-Text Label 9500 3000 1    60   ~ 0
-GPS2
 Wire Wire Line
 	9500 3000 9500 3100
 Connection ~ 9500 3100
-Text Label 7600 3000 3    60   ~ 0
-GPS3
-Text Label 6300 2800 1    60   ~ 0
-GPS4
 Wire Wire Line
 	6300 2800 6300 2900
 Connection ~ 6300 2900
+Wire Wire Line
+	5300 5600 5300 5800
+Wire Wire Line
+	4200 5700 5300 5700
+Connection ~ 5300 5700
+Wire Wire Line
+	5300 6300 5300 6400
+Wire Wire Line
+	4300 6300 4300 6500
+Wire Wire Line
+	4300 7000 4300 7100
+Wire Wire Line
+	3600 6400 4800 6400
+Wire Wire Line
+	4800 6400 4800 6300
+Connection ~ 4300 6400
+Wire Wire Line
+	4800 5800 4800 5700
+Connection ~ 4800 5700
+Wire Wire Line
+	4300 5800 4300 5700
+Connection ~ 4300 5700
+Wire Wire Line
+	3700 5700 3600 5700
+Wire Wire Line
+	2400 5600 2400 5800
+Wire Wire Line
+	2400 5700 2800 5700
+Connection ~ 2400 5700
+Wire Wire Line
+	2800 5800 2700 5800
+Wire Wire Line
+	2700 5800 2700 5700
+Connection ~ 2700 5700
+Wire Wire Line
+	2800 6400 2700 6400
+Wire Wire Line
+	2700 6400 2700 6500
+Wire Wire Line
+	2400 6400 2400 6300
+Wire Wire Line
+	4400 2900 4500 2900
+Wire Wire Line
+	3700 2600 3700 2500
+Wire Wire Line
+	4000 1900 4000 2000
+$Comp
+L Resistor R4
+U 1 1 54A651AF
+P 3700 1650
+F 0 "R4" V 3550 1750 60  0000 L CNN
+F 1 "390" V 3650 1750 60  0000 L CNN
+F 2 "Resistors:RESC1608N" H 3600 1650 60  0001 C CNN
+F 3 "" H 3700 1750 60  0001 C CNN
+F 4 "Value" H 3700 1650 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 3700 1650 60  0001 C CNN "Manufacturer Part #"
+F 6 "Value" H 3700 1650 60  0001 C CNN "Vendor"
+F 7 "Value" H 3700 1650 60  0001 C CNN "Vendor Part #"
+F 8 "1/10W" V 3750 1750 50  0000 L CNN "Power"
+F 9 "5%" V 3850 1750 50  0000 L CNN "Tolerance"
+	1    3700 1650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4400 1300 4400 2900
+Wire Wire Line
+	3600 1300 4400 1300
+Wire Wire Line
+	3700 1400 3700 1300
+Connection ~ 3700 1300
+Wire Wire Line
+	3700 1900 3700 2000
+Wire Wire Line
+	4000 1400 4000 1300
+Connection ~ 4000 1300
+Wire Wire Line
+	3100 1300 2800 1300
+Connection ~ 2800 1300
 $EndSCHEMATC

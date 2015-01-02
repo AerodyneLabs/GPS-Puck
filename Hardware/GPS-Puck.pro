@@ -1,4 +1,4 @@
-update=1/1/2015 6:27:29 PM
+update=1/1/2015 11:32:28 PM
 version=1
 last_client=kicad
 [cvpcb]
@@ -32,7 +32,9 @@ version=1
 LibDir=../../KiCadLib/Symbols
 [eeschema/libraries]
 LibName1=power
-LibName2=C:/Users/Turtle/Documents/GitHub/KiCadLib/Symbols/Connectors
-LibName3=C:/Users/Turtle/Documents/GitHub/KiCadLib/Symbols/Passives
-LibName4=C:/Users/Turtle/Documents/GitHub/KiCadLib/Symbols/Sensors
-LibName5=C:/Users/Turtle/Documents/GitHub/KiCadLib/Symbols/Skyworks
+LibName2=ONSemiconductor
+LibName3=Actives
+LibName4=Connectors
+LibName5=Passives
+LibName6=Sensors
+LibName7=Skyworks

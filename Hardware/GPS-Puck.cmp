@@ -1,10 +1,17 @@
-Cmp-Mod V01 Created by Cvpcb (2014-12-20 BZR 5331)-product   date = 1/1/2015 6:52:03 PM
+Cmp-Mod V01 Created by Cvpcb (2014-12-08 BZR 5318)-product   date = 1/2/2015 12:50:31 AM
 
 BeginCmp
 TimeStamp = /54A5E642;
 Reference = AE1;
 ValeurCmp = Antenna;
 IdModule  = Custom:Antenna_APAE1575R1840BADB1F;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A64CFF;
+Reference = B1;
+ValeurCmp = 3V;
+IdModule  = Batteries:Battery_ML-1220-F1AN;
 EndCmp
 
 BeginCmp
@@ -64,6 +71,41 @@ IdModule  = Capacitors:CAPC1608N;
 EndCmp
 
 BeginCmp
+TimeStamp = /54A637C4;
+Reference = C9;
+ValeurCmp = 4.7uF;
+IdModule  = Capacitors:CAPC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A64D93;
+Reference = C10;
+ValeurCmp = 1uF;
+IdModule  = Capacitors:CAPC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A63091;
+Reference = C11;
+ValeurCmp = 18pF;
+IdModule  = Capacitors:CAPC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A630FA;
+Reference = C12;
+ValeurCmp = 10uF;
+IdModule  = Capacitors:CAPC2012N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A64C63;
+Reference = D1;
+ValeurCmp = RB521;
+IdModule  = Diodes:SODFL1608N;
+EndCmp
+
+BeginCmp
 TimeStamp = /54A5EC02;
 Reference = L1;
 ValeurCmp = 8.2nH;
@@ -78,9 +120,16 @@ IdModule  = Inductors:INDC1608N;
 EndCmp
 
 BeginCmp
+TimeStamp = /54A62F76;
+Reference = L3;
+ValeurCmp = 2.2uH;
+IdModule  = Inductors:INDC2012N;
+EndCmp
+
+BeginCmp
 TimeStamp = /54A5FAC8;
 Reference = R1;
-ValeurCmp = Resistor;
+ValeurCmp = 33k;
 IdModule  = Resistors:RESC1608N;
 EndCmp
 
@@ -99,6 +148,27 @@ IdModule  = Resistors:RESC1608N;
 EndCmp
 
 BeginCmp
+TimeStamp = /54A651AF;
+Reference = R4;
+ValeurCmp = 3k;
+IdModule  = Resistors:RESC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A62FD3;
+Reference = R5;
+ValeurCmp = 453k;
+IdModule  = Resistors:RESC1608N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A63030;
+Reference = R6;
+ValeurCmp = 100k;
+IdModule  = Resistors:RESC1608N;
+EndCmp
+
+BeginCmp
 TimeStamp = /54A5E60B;
 Reference = U1;
 ValeurCmp = Venus838LPx-L;
@@ -110,6 +180,13 @@ TimeStamp = /54A5E6D3;
 Reference = U2;
 ValeurCmp = SKY65047-360LF;
 IdModule  = SON:SON50P200X200-9T100X180N;
+EndCmp
+
+BeginCmp
+TimeStamp = /54A62EE9;
+Reference = U3;
+ValeurCmp = NCP1521;
+IdModule  = SOT:SOT95P275-5L40N;
 EndCmp
 
 EndListe
